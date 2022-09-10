@@ -45,4 +45,19 @@ const renderTable = async (data: user[]) => {
   table.innerHTML = result;
 };
 
+const nextPage = () => {
+  currentPage += 1;
+  startApp();
+};
+
+const prevPage = () => {
+  if (currentPage <= 1) {
+    const button = document.getElementById("prevButton")?.setAttribute("disabled", "");
+    return;
+  }
+  document.getElementById("prveButton")?.removeAttribute("disabled");
+  currentPage -= 1;
+  startApp();
+};
+
 document.addEventListener('DOMContentLoaded', startApp);
