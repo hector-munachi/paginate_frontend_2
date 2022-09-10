@@ -11,7 +11,7 @@ interface user {
 
 const startApp = async () => {
    // Select the table (tbody)
-   displayLoading()
+   currentPage >= 2 ? hideLoading : displayLoading()
   // get the data
   let resp = await fetch(
     `https://randomapi.com/api/8csrgnjw?key=LEIX-GF3O-AG7I-6J84&page=${currentPage}`
