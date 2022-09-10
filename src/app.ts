@@ -11,12 +11,13 @@ interface user {
 
 const startApp = async () => {
    // Select the table (tbody)
-
+   displayLoading()
   // get the data
   let resp = await fetch(
     `https://randomapi.com/api/8csrgnjw?key=LEIX-GF3O-AG7I-6J84&page=${currentPage}`
   );
   data = await resp.json();
+  hideLoading()
   const tableData = data.results[0];
   // ====== LOG START ======
   console.log('\n');
@@ -27,6 +28,17 @@ const startApp = async () => {
   // ====== LOG END ======
   
   renderTable(tableData[currentPage]);
+};
+
+
+const loading: any = document.querySelector('#loading');
+
+const displayLoading = () => {
+  loading.style.display = 'block';
+};
+
+const hideLoading = () => {
+  loading.style.display = 'none';
 };
     
 const renderTable = async (data: user[]) => {
