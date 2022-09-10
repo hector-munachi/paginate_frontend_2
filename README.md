@@ -16,7 +16,7 @@ Automated Tests are handled by GitHub Actions.
 Clone the repository.
 
 ```bash
-git clone https://github.com/hector-munachi/paginated_frontend_2.git 
+git clone https://github.com/hector-munachi/paginate_frontend_2.git 
 ```
 
 Use the package manager npm or yarn to install.
