@@ -5,7 +5,7 @@ TalentQL Pipline Assessment to build and deploy a very simple frontend app for p
 
 ## Implementation
 
-This project was bootstrapped with Parcel, Typescript, and deployed to Netlify.
+This project was written using HTML, CSS, JavaScript, bootstrapped with Parcel, Typescript, and deployed to Netlify.
 
 Automated Tests are handled by GitHub Actions.
 
