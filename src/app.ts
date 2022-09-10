@@ -29,6 +29,20 @@ const startApp = async () => {
   renderTable(tableData[currentPage]);
 };
     
+const renderTable = async (data: user[]) => {
+  const table = document.querySelector("#recordsTable tbody") as any;
+  // create html
+  let result = "";
+  data.forEach((el: user) => {
+    console.log(el);
+    result += `<tr id="${el.id}">
+     <td>${el.row}</td>
+     <td>${el.gender}</td>
+     <td>${el.age}</td>
+     </tr>`;
+  });
+
+  table.innerHTML = result;
 };
 
 document.addEventListener('DOMContentLoaded', startApp);
