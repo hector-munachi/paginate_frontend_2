@@ -1,6 +1,8 @@
 
 # Paginated Frontend 2
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c1714c90-a555-41c7-bfa9-24c8230281ff/deploy-status)](https://app.netlify.com/sites/hector-talentql-pipline-2/deploys)
+
 TalentQL Pipline Assessment to build and deploy a very simple frontend app for paginated data from an API.
 
 ## Implementation
